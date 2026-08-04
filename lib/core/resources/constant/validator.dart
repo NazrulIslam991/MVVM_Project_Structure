@@ -1,4 +1,5 @@
 class ValidationManager {
+  /// ********************************** Name ********************************
   static String? validateName(String? value) {
     if (value == null || value.isEmpty) {
       return "Full name is required";
@@ -6,17 +7,21 @@ class ValidationManager {
     return null;
   }
 
+  /// ********************************** Email ********************************
   static String? validateEmail(String? value) {
     if (value == null || value.isEmpty) {
       return "Email is required";
     }
-    final emailRegex = RegExp(r"^[a-zA-Z][a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]*@[a-zA-Z0-9]+\.[a-zA-Z]+");
+    final emailRegex = RegExp(
+      r"^[a-zA-Z][a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]*@[a-zA-Z0-9]+\.[a-zA-Z]+",
+    );
     if (!emailRegex.hasMatch(value)) {
       return "Invalid email format";
     }
     return null;
   }
 
+  /// ********************************** Phone ********************************
   static String? validatePhone(String? value) {
     if (value == null || value.isEmpty) {
       return "Phone Number is required";
@@ -29,6 +34,7 @@ class ValidationManager {
     return null;
   }
 
+  /// ********************************** Location ********************************
   static String? validateLocation(String? value) {
     if (value == null || value.isEmpty) {
       return "Location is required";
@@ -36,6 +42,7 @@ class ValidationManager {
     return null;
   }
 
+  /// ********************************** DOB ********************************
   static String? validateDOB(String? value) {
     if (value == null || value.isEmpty) {
       return "Data of birth is required";
@@ -43,13 +50,7 @@ class ValidationManager {
     return null;
   }
 
-  static String? validateBio(String? value) {
-    if (value == null || value.isEmpty) {
-      return "Bio is required";
-    }
-    return null;
-  }
-
+  /// ********************************** Password ********************************
   static String? validatePassword(String? value) {
     if (value == null || value.isEmpty) {
       return "Password is required";
@@ -60,10 +61,11 @@ class ValidationManager {
     return null;
   }
 
+  /// ********************************** Confirm Password ********************************
   static String? validateConfirmPassword(
-      String? password,
-      String? confirmPassword,
-      ) {
+    String? password,
+    String? confirmPassword,
+  ) {
     if (confirmPassword == null || confirmPassword.isEmpty) {
       return "Confirm password is required";
     }
@@ -73,7 +75,7 @@ class ValidationManager {
     return null;
   }
 
-  // mask email
+  /// ********************************** Email Mask ********************************
   static String maskEmail(String email) {
     if (email.isEmpty || !email.contains('@')) return email;
 

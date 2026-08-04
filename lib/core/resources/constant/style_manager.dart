@@ -38,9 +38,7 @@ TextStyle lightF14W300({required Color color}) {
   );
 }
 
-// -----------------------------------------------------------------------------
-// REGULAR (400)
-// -----------------------------------------------------------------------------
+/// **************************** REGULAR (F:12, W:400) ****************************
 TextStyle regularF12W400({required Color color}) {
   return _getTextStyle(
     FontSize.s12,
@@ -50,6 +48,7 @@ TextStyle regularF12W400({required Color color}) {
   );
 }
 
+/// **************************** REGULAR (F:14, W:400) ****************************
 TextStyle regularF14W400({required Color color}) {
   return _getTextStyle(
     FontSize.s14,
@@ -59,6 +58,7 @@ TextStyle regularF14W400({required Color color}) {
   );
 }
 
+/// **************************** REGULAR (F:16, W:400) ****************************
 TextStyle regularF16W400({required Color color}) {
   return _getTextStyle(
     FontSize.s16,
@@ -68,9 +68,7 @@ TextStyle regularF16W400({required Color color}) {
   );
 }
 
-// -----------------------------------------------------------------------------
-// MEDIUM (500)
-// -----------------------------------------------------------------------------
+/// **************************** Medium (F:12, W:500) ****************************
 TextStyle mediumF12W500({required Color color}) {
   return _getTextStyle(
     FontSize.s12,
@@ -80,6 +78,7 @@ TextStyle mediumF12W500({required Color color}) {
   );
 }
 
+/// **************************** Medium (F:14, W:500) ****************************
 TextStyle mediumF14W500({required Color color}) {
   return _getTextStyle(
     FontSize.s14,
@@ -89,6 +88,7 @@ TextStyle mediumF14W500({required Color color}) {
   );
 }
 
+/// **************************** Medium (F:16, W:500) ****************************
 TextStyle mediumF16W500({required Color color}) {
   return _getTextStyle(
     FontSize.s16,
@@ -98,6 +98,7 @@ TextStyle mediumF16W500({required Color color}) {
   );
 }
 
+/// **************************** Medium (F:18, W:500) ****************************
 TextStyle mediumF18W500({required Color color}) {
   return _getTextStyle(
     FontSize.s18,
@@ -107,9 +108,7 @@ TextStyle mediumF18W500({required Color color}) {
   );
 }
 
-// -----------------------------------------------------------------------------
-// SEMIBOLD (600)
-// -----------------------------------------------------------------------------
+/// **************************** SemiBold (F:14, W:600) ****************************
 TextStyle semiBoldF14W600({required Color color}) {
   return _getTextStyle(
     FontSize.s14,
@@ -119,6 +118,7 @@ TextStyle semiBoldF14W600({required Color color}) {
   );
 }
 
+/// **************************** SemiBold (F:16, W:600) ****************************
 TextStyle semiBoldF16W600({required Color color}) {
   return _getTextStyle(
     FontSize.s16,
@@ -128,6 +128,7 @@ TextStyle semiBoldF16W600({required Color color}) {
   );
 }
 
+/// **************************** SemiBold (F:18, W:600) ****************************
 TextStyle semiBoldF18W600({required Color color}) {
   return _getTextStyle(
     FontSize.s18,
@@ -137,6 +138,7 @@ TextStyle semiBoldF18W600({required Color color}) {
   );
 }
 
+/// **************************** SemiBold (F:28, W:600) ****************************
 TextStyle semiBoldF28W600({required Color color}) {
   return _getTextStyle(
     FontSize.s28,
@@ -146,9 +148,7 @@ TextStyle semiBoldF28W600({required Color color}) {
   );
 }
 
-// -----------------------------------------------------------------------------
-// BOLD (700)
-// -----------------------------------------------------------------------------
+/// **************************** Bold (F:16, W:700) ****************************
 TextStyle boldF16W700({required Color color}) {
   return _getTextStyle(
     FontSize.s16,
@@ -158,6 +158,7 @@ TextStyle boldF16W700({required Color color}) {
   );
 }
 
+/// **************************** Bold (F:18, W:700) ****************************
 TextStyle boldF18W700({required Color color}) {
   return _getTextStyle(
     FontSize.s18,
@@ -167,6 +168,7 @@ TextStyle boldF18W700({required Color color}) {
   );
 }
 
+/// **************************** Bold (F:20, W:700) ****************************
 TextStyle boldF20W700({required Color color}) {
   return _getTextStyle(
     FontSize.s20,
@@ -176,6 +178,7 @@ TextStyle boldF20W700({required Color color}) {
   );
 }
 
+/// **************************** Bold (F:24, W:700) ****************************
 TextStyle boldF24W700({required Color color}) {
   return _getTextStyle(
     FontSize.s24,
@@ -185,9 +188,7 @@ TextStyle boldF24W700({required Color color}) {
   );
 }
 
-// -----------------------------------------------------------------------------
-// EXTRA BOLD (800)
-// -----------------------------------------------------------------------------
+/// **************************** Bold (F:24, W:800) ****************************
 TextStyle boldF24W800({required Color color}) {
   return _getTextStyle(
     FontSize.s24,
@@ -197,6 +198,7 @@ TextStyle boldF24W800({required Color color}) {
   );
 }
 
+/// **************************** Bold (F:32, W:800) ****************************
 TextStyle boldF32W800({required Color color}) {
   return _getTextStyle(
     FontSize.s32,

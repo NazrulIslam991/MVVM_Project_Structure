@@ -41,7 +41,7 @@ class FileImagePickerNotifier extends StateNotifier<PickerState> {
 
   final ImagePicker _picker = ImagePicker();
 
-  ///  Pick a single image from gallery
+  /// ***************************  Pick a single image from gallery ***************************
   Future<void> pickImage(ImageSource source) async {
     final XFile? image = await _picker.pickImage(
       source: source,
@@ -52,7 +52,7 @@ class FileImagePickerNotifier extends StateNotifier<PickerState> {
     }
   }
 
-  ///  Pick multiple images
+  /// *************************** Pick multiple images ***************************
   Future<void> pickMultipleImages() async {
     final List<XFile> images = await _picker.pickMultiImage();
     if (images.isNotEmpty) {
@@ -60,7 +60,7 @@ class FileImagePickerNotifier extends StateNotifier<PickerState> {
     }
   }
 
-  /// Pick a video (New Method)
+  /// *************************** Pick a video ***************************
   Future<void> pickVideo(ImageSource source) async {
     try {
       final XFile? video = await _picker.pickVideo(source: source);
@@ -73,7 +73,7 @@ class FileImagePickerNotifier extends StateNotifier<PickerState> {
     }
   }
 
-  ///  Clear all selections
+  /// *************************** Clear all selections ***************************
   void clearAll() {
     state = const PickerState();
   }
